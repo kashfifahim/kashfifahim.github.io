@@ -9,7 +9,6 @@
 
 table {
     margin: 0 auto;
-    border: 2px solid black;
 }
 
 td, th {
@@ -18,4 +17,16 @@ td, th {
 
 h1, h2 {
     text-align: center;
+}
+
+.blogth, .blogtd {
+    border: none;
+}
+
+#blogtable {
+    border: 1px solid black;
+}
+
+.blogth {
+    text-align: left;
 }
