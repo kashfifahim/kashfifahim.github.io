@@ -24,9 +24,12 @@ h1, h2 {
 }
 
 #blogtable {
-    border: 1px solid black;
+    border: none;
+    margin: 0 auto;
+    min-width: 500px;
+    max-width: 800px;
 }
 
-.blogth {
-    text-align: left;
+.blogtd {
+    padding: 10px 10px;
 }
