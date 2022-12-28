@@ -29,6 +29,7 @@ h1, h2 {
 
 #blogtable {
     border: none;
+    display: none;
 }
 
 .blogtd {
