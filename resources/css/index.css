@@ -1,9 +1,6 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    /* reset browser's margin, padding */
-    margin: 0;
-    padding: 0;
 }
 
 .title, .footer {
