@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 
-.title, .footer {
+.title {
     color: blue;
     text-align: center;
 }
@@ -39,4 +39,9 @@ h1, h2 {
 }
 .empty {
     border-style: hidden;
+}
+
+.footer {
+    color: black;
+    text-align: center;
 }
