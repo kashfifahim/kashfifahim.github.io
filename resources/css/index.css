@@ -16,6 +16,14 @@ td, th {
     border: 0.5px solid black;
 }
 
+td {
+    background-color: lightblue;
+}
+
+th {
+    background-color: bisque;
+}
+
 h1, h2 {
     text-align: center;
 }
@@ -39,6 +47,7 @@ h1, h2 {
 }
 .empty {
     border-style: hidden;
+    background-color: transparent;
 }
 
 .footer {
