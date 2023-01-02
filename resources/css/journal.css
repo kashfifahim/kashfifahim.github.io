@@ -1,0 +1,23 @@
+body {
+    margin: 10% 10%;
+}
+
+h2{
+    /* letter-spacing: 1px; */
+    text-decoration: overline;
+}
+
+nav {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 100%;
+    font-size: small;
+    max-width: 600px;
+}
+
+li {
+    list-style-type: square;
+}
