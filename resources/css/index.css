@@ -41,3 +41,11 @@ h1, h2 {
 .done {
     background-color: green;
 }
+
+nav {
+    text-align: left;
+}
+
+.ul-nav {
+    list-style: none;
+}
