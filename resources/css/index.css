@@ -43,7 +43,8 @@ h1, h2 {
 }
 
 nav {
-    text-align: left;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 .ul-nav {
