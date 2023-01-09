@@ -7,8 +7,9 @@ body {
     margin: 10% 10%;
 }
 
-table {
+.worklog {
     margin: 0 auto;
+    padding-left: 40px;
 }
 
 td {
@@ -22,7 +23,7 @@ th {
 }
 
 h1, h2 {
-    text-align: center;
+    text-align: left;
 }
 
 .offday {
@@ -43,8 +44,9 @@ h1, h2 {
 }
 
 nav {
-    text-align: center;
-    padding-bottom: 10px;
+    text-align: left;
+    padding-bottom: 20px;
+    padding-left: 20px;
 }
 
 .ul-nav {
