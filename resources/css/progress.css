@@ -57,3 +57,7 @@ h1, h2 {
     text-decoration: solid;
     color: green;
 }
+
+.Tables {
+    display: inline-table;
+}
