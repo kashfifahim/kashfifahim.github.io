@@ -7,9 +7,13 @@ body {
     margin: 10% 10%;
 }
 
-.worklog {
+.worklog23 {
     margin: 0 auto;
     padding-left: 40px;
+}
+
+.worklog22 {
+    display: none;
 }
 
 td {
