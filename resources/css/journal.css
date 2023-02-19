@@ -1,11 +1,11 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
 body {
     margin: 10% 10%;
     max-width: 700px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -19,12 +19,40 @@ nav {
 }
 
 p {
-    font-family: 'Courier New', Courier, monospace;
     line-height: 100%;
     font-size: small;
     max-width: 600px;
+
 }
 
 li {
     list-style-type: square;
+}
+
+table, td {
+    /* border: 1px solid black; */
+}
+
+.left, .annotation {
+    max-width: 100px;
+    text-align: left;
+}
+
+.left {
+    background-color: blueviolet;
+}
+
+td {
+    padding: 10px 10px;
+}
+
+.entry {
+    background-color: lemonchiffon;
+    padding: 10px 10px;
+}
+
+.footer {
+    text-align: center;
+    background-color: black;
+    color: white;
 }
