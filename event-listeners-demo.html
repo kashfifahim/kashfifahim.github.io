@@ -11,7 +11,7 @@
 </body>
 </html>
 <script>
-document.getElementBy('x').onclick = function() {
+document.getElementById('x').onclick = function() {
 // put grant request here
 Notification.requestPermission().then(function (permission) {
 console.log('Permission:', permission);
