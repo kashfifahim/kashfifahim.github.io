@@ -2,149 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./resources/css/index.css">
-    <title>Kashfi</title>
+    <title>Notifications Demo</title>
 </head>
 <body>
-      <main>
-        <h1 class="title">Table of Contents</h1>
-        <nav>
-          <a href="./frontend-progress.html">Front-End Engineering Path</a>
-          &nbsp;
-          <a href="./backend-progress.html">Back-End Engineering Path</a>
-        </nav>
-        
-        <!-- <table class="feb23">
-          <thead>
-            <th>Feb '23</th>
-         </thead>
-         <tr>
-          <td class="date">17</td>
-          <td><a href="journal/20230219.html">2.17</a></td>
-         </tr>
-        </table> -->
-      <br>
-      
-        <table class="jan23">
-          <thead>
-            <th>Jan '23</th>
-            <!-- <th>Started At</th> -->
-            <!-- <th>Ended At</th> -->
-         </thead>
-         <tr>
-          <td class="date">17</td>
-          <td>Happy to report that I completed the JS Syntax 1 Module.</td>
-         </tr>
-         <tr>
-          <td class="date">9</td>
-          <td>Working through JS Syntax I on CodeAcademy</td>
-         </tr>
-         <tr>
-          <td class="date">8</td>
-          <td colspan="2">Created couple of pages to track progress on <a href="./backend-progress.html">Back-End Engineering Path</a>, <a href="./frontend-progress.html">Front-End Engineering Path</a></td>
-         </tr>
-         <tr>
-          <td class="date">7</td>
-          <td colspan="2">Not much progress</td>
-         </tr>
-         <tr>
-          <td class="date">5</td>
-          <td colspan="2">Busy with work</td>
-         </tr>
-         <tr>
-          <td class="date">2</td>
-          <td colspan="3"><a href="/journal/010223.html">Responded to a request for help</a></td>
-         </tr>
-         <tr>
-          <td class="date">1</td>
-          <td>Happy New Year | Didn't Do Anything</td>
-         </tr>
-      </table>
-      <br>
-      </table>
-      <table class="dec22">
-        <thead>
-          <th>Dec '22</th>
-          <!-- <th>Started At</th> -->
-          <!-- <th>Ended At</th> -->
-       </thead>
-         <tr>
-          <td>Dec.30, 31</td>
-          <td>New Year's Weekend</td>
-          <td>Didn't Do Anything</td>
-        </tr>
-         <tr>
-          <td>Dec.29</td>
-          <td>8:00 p.m. Educative.io -- CPP </td>
-          <td>8:45 p.m. <a href="https://kashfifahim.github.io/cppcheatsheet/">Created a cheatsheet for C++</td>
-        </tr>
-         <tr>
-          <td>Dec.28</td>
-          <td>10:00 p.m. Educative.io -- Lists </td>
-          <td>11:00 p.m. <a href="https://kashfifahim.github.io/pythonreview/">Created a cheatsheet for Python</td>
-        </tr>
-         <tr>
-          <td class="empty">&nbsp;</td>
-          <td>7:00 p.m. Codeacademy: Learn Links and Buttons</td>
-          <td>8:30 p.m. Codeacademy: The Summit Coding </td>
-        </tr>
-         <tr>
-          <td class="empty">&nbsp;</td>
-          <td>10:00 a.m. <a href="https://kashfifahim.github.io/htmlcssreference/">Challenge Project: Build Your Own Cheat Sheet</a></td>
-          <td>11:00 a.m. Codeacademy: Learn Links and Buttons</td>
-        </tr>
-        
-        <tr>
-          <td>Dec.27</td>
-          <td class="offday" colspan="2">Didn't Do Anything Took a Personal Day</td>
-        </tr>
-
-        <tr>
-            <td>Dec.26</td>
-            <td>10:00 a.m. Codeacademy: Improved Styling with CSS</td>
-            <td>3:00 p.m. Challenge Project: Build Your Own Cheat Sheet</td>
-        </tr>
-        <tr>
-            <td>Dec.25</td>
-            <td class="offday" colspan="2">Happy Holidays</td>
-        </tr>
-          <tr>
-        <tr>
-          <td>Dec.24</td>
-          <td>Codeacademy: Intro to Colors</td>
-          <td>Codeacademy: Typography</td>
-        </tr>
-          <td class="empty">&nbsp;</td>
-          <td>Codeacademy: Deploying Websites</td>
-          <td>Codeacademy: Improved Styling with CSS</td>
-        </tr>
-        <tr>
-          <td>Dec.23</td>
-          <td class="offday" colspan="2">Didn't Do Anything Took a Personal Day</td>
-        </tr>
-        <tr>
-          <td>Dec.22</td>
-          <td>Codeacademy: Dasmoto's Arts & Crafts 9:15 p.m.</td>
-          <td>Codeacademy: <a href="https://kashfifahim.github.io/CodeAcademyDasmotoArtsCrafts/">Dasmoto's Arts & Crafts 10:00 p.m.</a></td>
-        </tr>
-        <tr>
-          <td class="empty">&nbsp;</td>
-          <td>Codeacademy: 4: Fundamentals of CSS/Display and Positioning/Display Block</td>
-          <td>Codeacademy: Off-Platform Project: Dasmoto's Arts & Crafts</td>
-        </tr>
-      </table>
-        <br>
-        </main>
-        <footer>
-        </footer>
+    
 </body>
 </html>
-<!-- 
-<tr>
-  <td></td>
-  <td></td>
-  <td></td>
-</tr>
--->
+<script>
+    // Let's check if the browser supports notifications
+if (!("Notification" in window)) {
+  console.log("This browser does not support desktop notification");
+}
+
+// Let's check whether notification permissions have already been granted
+else if (Notification.permission === "granted") {
+  // If it's okay let's create a notification
+  const notification = new Notification("Hi there!");
+}
+
+// Otherwise, we need to ask the user for permission
+else if (Notification.permission !== "denied") {
+  Notification.requestPermission().then(function (permission) {
+    // If the user accepts, let's create a notification
+    if (permission === "granted") {
+      const notification = new Notification("Hi there!");
+    }
+  });
+}
+</script>
