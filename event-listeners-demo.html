@@ -13,8 +13,6 @@
 // Request Permission
 Notification.requestPermission().then(function (permission) {
 console.log('Permission:', permission);
-});
-
 // Create a Notification
 if (Notification.permission === 'granted') {
     let notification = new Notification('Hello, CrossCompute!', {
@@ -34,4 +32,7 @@ if (Notification.permission === 'granted') {
         console.log('The notification was shown!');
     });
 }
+});
+
+
 </script>
