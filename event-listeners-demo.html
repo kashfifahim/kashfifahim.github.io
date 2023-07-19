@@ -7,10 +7,12 @@
 </head>
 <body>
     <p>Event Listeners Demo</p>
+    <button id="x"></button>
 </body>
 </html>
 <script>
-// Request Permission
+document.getElementBy('x').onclick = function() {
+// put grant request here
 Notification.requestPermission().then(function (permission) {
 console.log('Permission:', permission);
 // Create a Notification
@@ -33,6 +35,9 @@ if (Notification.permission === 'granted') {
     });
 }
 });
+}
+// Request Permission
+
 
 
 </script>
