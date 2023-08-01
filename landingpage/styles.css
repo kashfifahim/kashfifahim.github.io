@@ -1,39 +1,39 @@
 :root {
-    --header-font-size: 3.5em;
-    --paragraph-font-size: 1.5em;
-    --button-font-size: 1.2em;
+    --header-font-size: calc(3em + 1.5vw); /* Adjusted */
+    --paragraph-font-size: calc(1em + 1vw); /* Adjusted */
+    --button-font-size: calc(0.7em + 0.5vw); /* Adjusted */
     --section-padding: 50px 20px;
-  }
-  
-  body {
+}
+
+body {
     background-color: #0C3B2E;
     color: white;
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-  }
-  
-  .hero, .hypothesis, .reach-out {
+}
+
+.hero, .hypothesis, .reach-out {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    height: 100vh;
+    height: 50vh;
     padding: var(--section-padding);
-  }
-  
-  .header, .hypothesis-header, .reach-out-header {
+}
+
+.header, .hypothesis-header, .reach-out-header {
     font-size: var(--header-font-size);
     margin-bottom: 20px;
-  }
-  
-  .supporting-copy, .hypothesis-paragraph, .reach-out-paragraph {
+}
+
+.supporting-copy, .hypothesis-paragraph, .reach-out-paragraph {
     font-size: var(--paragraph-font-size);
     margin-bottom: 40px;
-  }
-  
-  .cta-button {
+}
+
+.cta-button {
     font-size: var(--button-font-size);
     font-family: sans-serif;
     background-color: #FFBA00;
@@ -41,37 +41,36 @@
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-  }
-  
-  .hypothesis {
+}
+
+.hypothesis {
     background-color: #6D9773;
     color: white;
-  }
-  
-  .reach-out {
+}
+
+.reach-out {
     display: flex;
     flex-direction: column;
     text-align: left;
     color: white;
     height: 50vh;
     justify-content: left;
-  }
-  
-  @media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 600px) {
     :root {
-      --header-font-size: 1.5em;
-      --paragraph-font-size: 0.8em;
-      --button-font-size: 0.8em;
+      --header-font-size: calc(1.5em + 2vw); /* Adjusted */
+      --paragraph-font-size: calc(0.8em + 1vw); /* Adjusted */
+      --button-font-size: calc(0.8em + 1vw); /* Adjusted */
       --section-padding: 20px 10px;
     }
-  }
-  
-  @media screen and (min-width: 601px) and (max-width: 1024px) {
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
     :root {
-      --header-font-size: 2.5em;
-      --paragraph-font-size: 1em;
-      --button-font-size: 1em;
+      --header-font-size: calc(2em + 1.5vw); /* Adjusted */
+      --paragraph-font-size: calc(1em + 1vw); /* Adjusted */
+      --button-font-size: calc(1em + 0.5vw); /* Adjusted */
       --section-padding: 40px 15px;
     }
-  }
-  
+}
