@@ -51,10 +51,11 @@ body {
 .reach-out {
     display: flex;
     flex-direction: column;
+    justify-content: left;
     text-align: left;
     color: white;
     height: 50vh;
-    justify-content: left;
+
 }
 
 @media screen and (max-width: 600px) {
@@ -73,4 +74,10 @@ body {
       --button-font-size: calc(1em + 0.5vw); /* Adjusted */
       --section-padding: 40px 15px;
     }
+}
+
+.hero, .hypothesis {
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
 }
