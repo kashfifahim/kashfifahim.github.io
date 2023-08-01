@@ -13,7 +13,7 @@ body {
     padding: 0;
 }
 
-.hero, .hypothesis, .reach-out {
+.hero, .platform, .reach-out {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,12 +23,12 @@ body {
     padding: var(--section-padding);
 }
 
-.header, .hypothesis-header, .reach-out-header {
+.header, .platform-header, .reach-out-header {
     font-size: var(--header-font-size);
     margin-bottom: 20px;
 }
 
-.supporting-copy, .hypothesis-paragraph, .reach-out-paragraph {
+.supporting-copy, .platform-paragraph, .reach-out-paragraph {
     font-size: var(--paragraph-font-size);
     margin-bottom: 40px;
 }
@@ -43,7 +43,7 @@ body {
     cursor: pointer;
 }
 
-.hypothesis {
+.platform {
     background-color: #6D9773;
     color: white;
 }
@@ -77,7 +77,7 @@ body {
     }
 }
 
-.hero, .hypothesis {
+.hero, .platform {
     text-align: left;
     padding-left: 50px;
     padding-right: 50px;
