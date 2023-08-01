@@ -19,7 +19,7 @@ body {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    height: 50vh;
+    height: 100vh;
     padding: var(--section-padding);
 }
 
