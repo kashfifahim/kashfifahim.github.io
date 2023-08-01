@@ -54,7 +54,8 @@ body {
     justify-content: left;
     text-align: left;
     color: white;
-    height: 50vh;
+    height: 100vh;
+    padding-left: 50px;
 
 }
 
