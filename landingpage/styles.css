@@ -1,36 +1,96 @@
 body {
-    font-family: Arial, sans-serif;
+    background-color: #0C3B2E;
+    color: white;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-h1, h2, h3 {
-    color: #333;
+
+.hero, .hypothesis, .reach-out {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 50vh; /* Adjusted to account for the new section */
+    padding: 0 20px;
 }
-p {
-    color: #666;
+
+.header, .reach-out-header {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
-.form-field {
-    margin-bottom: 10px;
+
+.supporting-copy, .reach-out-paragraph {
+    font-size: 1em;
+    margin-bottom: 40px;
 }
-.submit-button {
-    background-color: #0099cc;
-    color: #fff;
+
+.cta-button {
+    font-size: 1em;
+    font-family: sans-serif;
+    background-color: #FFBA00;
+    color: black;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    width: 100%;
 }
-@media (min-width: 768px) {
-    .submit-button {
-        width: auto;
+
+.hypothesis {
+    background-color: #6D9773;
+    color: white;
+    padding: 50px 20px;
+}
+
+.hypothesis-header {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.hypothesis-paragraph {
+    font-size: 1em;
+}
+
+.reach-out {
+    background-color: #FFBA00;
+    color: black;
+    padding: 50px 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .header, .hypothesis-header, .reach-out-header {
+        font-size: 1.5em;
     }
-    form {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+
+    .supporting-copy, .hypothesis-paragraph, .reach-out-paragraph {
+        font-size: 0.8em;
     }
-    .form-field {
-        flex: 0 0 calc(50% - 10px);
+
+    .cta-button {
+        padding: 8px 16px;
+        font-size: 0.8em;
+    }
+
+    .hypothesis, .reach-out {
+        padding: 20px 10px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .header, .hypothesis-header, .reach-out-header {
+        font-size: 1.8em;
+    }
+
+    .supporting-copy, .hypothesis-paragraph, .reach-out-paragraph {
+        font-size: 0.9em;
+    }
+
+    .cta-button {
+        padding: 9px 18px;
+        font-size: 0.9em;
+    }
+
+    .hypothesis, .reach-out {
+        padding: 40px 15px;
     }
 }
