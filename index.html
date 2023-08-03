@@ -3,31 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notifications Demo</title>
+    <title>Kashfi Fahim</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Kashfi Fahim</h1>
+        <nav>
+            <ul>
+                <li><a href="mailto:kashfi.fahim@gmail.com">email</a></li>
+                <!-- <li><a href="#content2"></a></li>
+                <li><a href="#content3">Content 3</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Table of Contents</h2>
+        </section>
+        <section id="content">
+            <h3><a href="/landingpage/">Landing Page (July '23)</a></h2>
+            <p>Developed for CrossCompute | Landing Page for prospective clients to schedule call with team.</p>
+        </section>
+        <section id="content">
+            <h3><a href="/notifications-demo/">Event Listener Notifications (July '23)</a></h2>
+            <p>Developed for CrossCompute | Pop up notifications using the Notifications API</p>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright Kashfi Fahim 2023</p>
+    </footer>
 </body>
 </html>
-<script>
-    // Let's check if the browser supports notifications
-if (!("Notification" in window)) {
-  console.log("This browser does not support desktop notification");
-}
-
-// Let's check whether notification permissions have already been granted
-else if (Notification.permission === "granted") {
-  // If it's okay let's create a notification
-  const notification = new Notification("Hi there!");
-}
-
-// Otherwise, we need to ask the user for permission
-else if (Notification.permission !== "denied") {
-  Notification.requestPermission().then(function (permission) {
-    // If the user accepts, let's create a notification
-    if (permission === "granted") {
-      const notification = new Notification("Hi there!");
-    }
-  });
-}
-</script>
