@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listeners Demo</title>
+</head>
+<body>
+    <p>Event Listeners Demo</p>
+    <button id="x">Click This Button</button>
+</body>
+</html>
+<script>
+document.getElementById('x').onclick = function() {
+// put grant request here
+Notification.requestPermission().then(function (permission) {
+console.log('Permission:', permission);
+// Create a Notification
+if (Notification.permission === 'granted') {
+    let notification = new Notification('Hello, CrossCompute!', {
+        body: 'This is a test notification',
+    });
+
+    // Attach Event Listeners
+    notification.addEventListener('click', function() {
+        console.log('The notification was clicked!');
+    });
+
+    notification.addEventListener('close', function() {
+        console.log('The notification was closed!');
+    });
+
+    notification.addEventListener('show', function() {
+        console.log('The notification was shown!');
+    });
+}
+});
+}
+// Request Permission
+
+
+
+</script>
