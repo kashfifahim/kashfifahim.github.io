@@ -60,3 +60,8 @@ footer {
 #content {
     padding-bottom: 10px;
 }
+
+.tabbed {
+    border: 1px solid red;
+    padding-left: 50px;
+}
